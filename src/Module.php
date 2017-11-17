@@ -281,12 +281,9 @@ class Module extends ServiceProvider
     public function groupRoutes()
     {
         foreach ($this->get('routes', []) as $file => $middlewares) {
-            $route = Route::group(['prefix' => $this->getAlias(), 'namespace' => $this->get('namespace', 'Modules\\' . $this->getName()) . '\Http\Controllers'], function() use ($file) {
+            Route::group(['middleware' => $middlewares, 'prefix' => $this->getAlias(), 'namespace' => $this->get('namespace', 'Modules\\' . $this->getName()) . '\Http\Controllers'], function() use ($file) {
                 require $this->path . '/Http/Routes/' . $file . '.php';
             });
-
-            if (count($middlewares))
-                $route->middleware($middlewares);
         }
     }
 
