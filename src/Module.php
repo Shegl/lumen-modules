@@ -248,6 +248,8 @@ class Module extends ServiceProvider
 
         $this->registerFiles();
 
+        $this->groupRoutes();
+
         $this->fireEvent('register');
     }
 
@@ -268,6 +270,21 @@ class Module extends ServiceProvider
     {
         foreach ($this->get('files', []) as $file) {
             include $this->path . '/' . $file;
+        }
+    }
+
+    /**
+     * Adds app middlewares to module routes
+     */
+    public function groupRoutes()
+    {
+        foreach ($this->get('routes', []) as $file => $middlewares) {
+            $route = Route::group(['prefix' => $this->getAlias(), 'namespace' => $this->get('namespace', 'Modules\\' . $this->getName()) . '\Http\Controllers'], function() use ($file) {
+                require $this->path . '/Http/Routes/' . $file . '.php';
+            });
+
+            if (count($middlewares))
+                $route->middleware($middlewares);
         }
     }
 
