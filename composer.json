@@ -1,5 +1,5 @@
 {
-  "name": "stoykov/lumen-modules",
+  "name": "esportsconstruct/lumen-modules",
   "description": "Lumen Modulation",
   "keywords": [
     "modules",
@@ -32,17 +32,17 @@
   },
   "autoload": {
     "psr-4": {
-      "stoykov\\Modules\\": "src"
+      "esportsconstruct\\Modules\\": "src"
     },
     "files": ["src/helpers.php"]
   },
   "extra": {
     "laravel": {
       "providers": [
-        "stoykov\\Modules\\ModulesServiceProvider"
+        "esportsconstruct\\Modules\\ModulesServiceProvider"
       ],
       "aliases": {
-        "Module": "stoykov\\Modules\\Facades\\Module"
+        "Module": "esportsconstruct\\Modules\\Facades\\Module"
       }
     },
     "branch-alias": {
