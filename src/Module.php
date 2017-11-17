@@ -7,6 +7,8 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
 
+use Route;
+
 class Module extends ServiceProvider
 {
     use Macroable;
