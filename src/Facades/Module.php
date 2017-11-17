@@ -1,6 +1,6 @@
 <?php
 
-namespace stoykov\Modules\Facades;
+namespace esportsconstruct\Modules\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

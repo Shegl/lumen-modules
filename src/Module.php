@@ -1,6 +1,6 @@
 <?php
 
-namespace stoykov\Modules;
+namespace esportsconstruct\Modules;
 
 use Illuminate\Container\Container;
 use Illuminate\Support\ServiceProvider;

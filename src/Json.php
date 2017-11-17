@@ -1,9 +1,9 @@
 <?php
 
-namespace stoykov\Modules;
+namespace esportsconstruct\Modules;
 
 use Illuminate\Filesystem\Filesystem;
-use stoykov\Modules\Exceptions\InvalidJsonException;
+use esportsconstruct\Modules\Exceptions\InvalidJsonException;
 
 class Json
 {

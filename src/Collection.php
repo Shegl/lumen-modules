@@ -1,6 +1,6 @@
 <?php
 
-namespace stoykov\Modules;
+namespace esportsconstruct\Modules;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection as BaseCollection;

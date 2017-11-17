@@ -1,9 +1,9 @@
 <?php
 
-namespace stoykov\Modules;
+namespace esportsconstruct\Modules;
 
 use Illuminate\Support\ServiceProvider;
-use stoykov\Modules\Providers\BootstrapServiceProvider;
+use esportsconstruct\Modules\Providers\BootstrapServiceProvider;
 
 class ModulesServiceProvider extends ServiceProvider
 {
@@ -50,7 +50,7 @@ class ModulesServiceProvider extends ServiceProvider
         $this->app->singleton('modules', function ($app) {
             $path = $app['config']->get('modules.paths.modules');
 
-            return new \stoykov\Modules\Repository($app, $path);
+            return new \esportsconstruct\Modules\Repository($app, $path);
         });
     }
 

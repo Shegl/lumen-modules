@@ -1,6 +1,6 @@
 <?php
 
-namespace stoykov\Modules\Exceptions;
+namespace esportsconstruct\Modules\Exceptions;
 
 class ModuleNotFoundException extends \Exception
 {

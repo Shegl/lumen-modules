@@ -5,7 +5,7 @@
     "modules",
     "lumen",
     "nwidart",
-    "stoykov",
+    "esportsconstruct",
     "module"
   ],
   "license": "MIT",
@@ -17,9 +17,9 @@
       "role": "Developer"
     },
     {
-      "name": "Antoan Stoykov",
-      "email": "me@astoykov.com",
-      "homepage": "https://astoykov.com",
+      "name": "Antoan esportsconstruct",
+      "email": "me@aesportsconstruct.com",
+      "homepage": "https://aesportsconstruct.com",
       "role": "Developer"
     }
   ],

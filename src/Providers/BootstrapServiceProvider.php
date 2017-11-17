@@ -1,6 +1,6 @@
 <?php
 
-namespace stoykov\Modules\Providers;
+namespace esportsconstruct\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

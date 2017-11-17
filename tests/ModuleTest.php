@@ -1,9 +1,9 @@
 <?php
 
-namespace stoykov\Modules\Tests;
+namespace esportsconstruct\Modules\Tests;
 
-use stoykov\Modules\Json;
-use stoykov\Modules\Module;
+use esportsconstruct\Modules\Json;
+use esportsconstruct\Modules\Module;
 
 class ModuleTest extends BaseTestCase
 {

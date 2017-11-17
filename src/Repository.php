@@ -1,13 +1,13 @@
 <?php
 
-namespace stoykov\Modules;
+namespace esportsconstruct\Modules;
 
 use Countable;
 use Illuminate\Container\Container;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
 
-use stoykov\Modules\Exceptions\ModuleNotFoundException;
+use esportsconstruct\Modules\Exceptions\ModuleNotFoundException;
 
 class Repository implements Countable
 {
