@@ -184,7 +184,8 @@ class Repository implements Countable
      */
     public function count() : int
     {
-        return count($this->all());
+        $source = $this->all();
+        return is_countable($source) ? count($this->all()) : 0;
     }
 
     /**
